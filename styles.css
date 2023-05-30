@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
-* {
+*, html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 html {
@@ -16,12 +17,14 @@ html {
     font-family: 'Lato', sans-serif;
     font-weight: 600;
     color:white;
+    width: 100%;
+    min-width: 760px;
 }
 
 body {
     background: url("assets/fond2.jpg") fixed;
     background-size: cover;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(20px);
 }
 
 /* navbar */
