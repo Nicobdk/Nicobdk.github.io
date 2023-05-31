@@ -121,7 +121,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 750px;
+    height: 100vh;
 }
 
 .section_null {
@@ -170,7 +170,8 @@ section {
     justify-content: center;
     text-align: center;
     align-items: center;
-    width: 80vw;
+    width: 50%;
+    height: 75%;
 }
 
 .container_about {
@@ -192,12 +193,101 @@ section {
 
 /* fin section */
 
+/* section stage */
+
+.container_stage {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: rgb(96, 7, 7);
+    width: 80%;
+    height: 80%;
+    padding-top: 20px;
+}
+
+.container_stage h1 {
+    font-size: 40px;
+    padding-bottom: 40px;
+}
+
+.container_stage .show_stage {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 80%;
+}
+
+.stage1, .stage2 {
+    border: solid 1px black;
+    border-radius: 14px;
+    width: 45%;
+    height: 100%;
+    background-color: blue;
+    border: solid rgb(255, 255, 255) 1px;
+    position: relative;   
+    overflow: hidden; 
+    
+}
+
+.btn_stage1, .btn_stage2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(111, 110, 110, 0.834);
+    border-radius: 0 0 14px 14px;
+    transform: translate3d(0,200px,0);
+    transition: all ease 0.8s;
+    overflow: hidden;
+    
+}
+
+.stage1:hover > .btn_stage1, .stage2:hover > .btn_stage2 {
+    transform: translate3d(0, 0, 0);
+
+}
+
+.stage1 img, .stage2 img{
+    width: 50px;
+    padding-left: 20px;
+    color: white;
+    filter: invert();
+}
+
+/* 
+.btn_stage1:hover img, .btn_stage2:hover img {
+    transform: translateX(12px);
+} */
+
+.show_stage a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    transition: all ease-in-out 1s;
+    transform: translateX(-20px);
+}
+
+.show_stage a:hover {
+    transform: scale(1.2);
+    transform: translateX(40px);
+}
+
+/* fin section stage */
+
 /* section contact */ 
 
 .section_contact {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(70, 70, 70, 0.508);
 }
 
 .section_contact h1 {
@@ -209,10 +299,12 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid black 0px;
     width: 100%;
-    height: 100%;
-    backdrop-filter: blur(5px);
+    height: 50%;
+}
+
+.container_blur h1 {
+    font-size: 40px;
 }
 
 .formulaire {
@@ -230,6 +322,15 @@ section {
     border-radius: 14px;
     text-decoration: none;
     color: white;
+    transition: all ease 0.3s;
+}
+
+.formulaire span a:hover {
+    transform: scale(1.1);
+}
+
+.formulaire span a img:hover {
+    transform: rotate(10deg);
 }
 
 .formulaire span a img {
@@ -400,4 +501,17 @@ section {
         opacity: 100%;
     }
     
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translate3d(0,200px,0);
+        visibility: hidden;
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0,0,0);
+        visibility: visible;
+    }
 }
