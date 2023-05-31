@@ -25,18 +25,33 @@ body {
     background: url("assets/fond2.jpg") fixed;
     background-size: cover;
     backdrop-filter: blur(20px);
+    width: 100%;
 }
 
 /* navbar */
+
+header {
+    width: 100%;
+    height: 20px;
+    position: fixed;
+    top:0;
+    left: 0;
+}
+
 .navbar {
-    position: sticky;
+    position: fixed;
     display: flex;
     align-items: center;
     padding: 20px;
     width: 100%;
-    height: 10%;
+    top: -100px;
+    left: 0;
+    z-index: 9999;
+    transition: top 0.8s;
+}
+
+.navbar.scrolled {
     top: 0;
-    /* background-color: red; */
 }
 
 .nav_menu {
@@ -47,7 +62,6 @@ body {
     height: 10%;
     margin-left: auto;
     font-size: 24px;
-    /* text-shadow: 3px 2px rgb(84, 84, 169); */
 }
 
 
@@ -165,23 +179,33 @@ section {
     color:rgb(96, 95, 95);
 }
 
+/* section about */
+
 .section_about .container_about {
     display: block;
     justify-content: center;
-    text-align: center;
     align-items: center;
-    width: 50%;
-    height: 75%;
+    width: 60%;
 }
 
 .container_about {
     border: solid white 1px;
     border-radius: 14px;
-    background-color: rgba(255, 255, 255, 0.423);
+    background-color: rgba(255, 255, 255, 0.301);
+}
+
+.container_about h1 {
+    border-bottom: solid white 1px;
+    font-size: 40px;
+}
+
+.text_about {
+    display: inline-block;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .text_about p{
-    border-top: solid white 1px;
     font-size: 18px;
     padding: 2rem;
 }
@@ -191,7 +215,33 @@ section {
     padding: 1rem;
 }
 
-/* fin section */
+.link_cv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    height: 10rem;
+    width: 100%;
+    /* margin-left: 40%; */
+}
+
+.CV_button {
+    border: solid rgb(255, 255, 255) 1px;
+    border-radius: 150px;
+    padding: 20px;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    transition: all ease 0.3s;
+}
+
+.CV_button:hover {
+    background-color: rgb(143, 138, 138);
+    color: black;
+    border: solid black 1px;
+}
+
+/* fin section about */
 
 /* section stage */
 
@@ -200,7 +250,6 @@ section {
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-    background-color: rgb(96, 7, 7);
     width: 80%;
     height: 80%;
     padding-top: 20px;
@@ -224,11 +273,18 @@ section {
     border-radius: 14px;
     width: 45%;
     height: 100%;
-    background-color: blue;
     border: solid rgb(255, 255, 255) 1px;
     position: relative;   
     overflow: hidden; 
-    
+}
+
+.stage1 img, .stage2 img{
+    background-size: cover;
+    transition: all ease 1s;
+}
+
+.stage1:hover img, .stage2:hover img{
+    transform: scale(1.2);
 }
 
 .btn_stage1, .btn_stage2 {
@@ -252,7 +308,7 @@ section {
 
 }
 
-.stage1 img, .stage2 img{
+.stage1 .arrow-right, .stage2 .arrow-right{
     width: 50px;
     padding-left: 20px;
     color: white;
