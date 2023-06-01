@@ -30,28 +30,24 @@ body {
 
 /* navbar */
 
-header {
-    width: 100%;
-    height: 20px;
-    position: fixed;
-    top:0;
-    left: 0;
-}
-
 .navbar {
-    position: fixed;
+    position: relative;
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 15px;
     width: 100%;
     top: -100px;
     left: 0;
     z-index: 9999;
-    transition: top 0.8s;
+    transition: ease top 0.8s;
+    height: 90px;
 }
 
 .navbar.scrolled {
     top: 0;
+    position: sticky;
+    background-color: rgba(104, 104, 104, 0.814);
+    transition: all ease 0.8s;
 }
 
 .nav_menu {
@@ -59,7 +55,7 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 500px;
-    height: 10%;
+    height: 5%;
     margin-left: auto;
     font-size: 24px;
 }
@@ -269,6 +265,7 @@ section {
 }
 
 .stage1, .stage2 {
+    display: flex;
     border: solid 1px black;
     border-radius: 14px;
     width: 45%;
@@ -336,6 +333,42 @@ section {
 }
 
 /* fin section stage */
+
+/* section veille */
+
+.container_veille{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container_veille h1 {
+    padding-bottom: 40px;
+}
+
+.show_veille {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid rgb(255, 255, 255) 1px;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.099);
+}
+
+.show_veille img {
+    padding: 20px;
+    width: 400px;
+    transition: ease all 1s;
+}
+
+.show_veille:hover img{
+    transform: scale(1.1) translateX(10px);
+}
+
+/* fin section veille */
 
 /* section contact */ 
 
