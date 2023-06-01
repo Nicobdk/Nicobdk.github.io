@@ -38,7 +38,7 @@ function animateText(){
 
 window.addEventListener('scroll', function() {
 var navbar = document.querySelector('.navbar');
-navbar.classList.toggle('scrolled', window.scrollY > 0);})
+navbar.classList.toggle('scrolled', window.scrollY > 750);})
 
 window.onload = animateText;
 

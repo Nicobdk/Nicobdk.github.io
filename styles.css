@@ -8,17 +8,13 @@
 }
 
 html {
-    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    height: 100vh;
-    animation: gradient 20s ease infinite; */
-    /* background: rgb(55, 54, 54); */
-    
     font-family: 'Lato', sans-serif;
     font-weight: 600;
     color:white;
     width: 100%;
     min-width: 760px;
+    scroll-behavior: smooth;
+    text-underline-offset: 10px;
 }
 
 body {
@@ -507,7 +503,23 @@ section {
 .react_intro img, .react_why img, .react_util img, .react_caract img, .react_avantages img {
     width: 400px;
     padding-top: 40px;
-    border-radius: 13px;
+}
+
+.react_caract img {
+    padding-right: 20px;
+}
+
+.react_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.react_caract .react_align {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .react_avantages .react_align p:nth-last-child(1){
