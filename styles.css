@@ -118,6 +118,7 @@ body {
 
 .mobile_menu {
     margin-left: 0;
+    width: 100%;
 }
 
 /* fin navbar */
@@ -127,7 +128,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
 }
 
 .section_null {
@@ -269,6 +270,7 @@ section {
 .container_stage h1 {
     font-size: 40px;
     padding-bottom: 40px;
+    text-decoration: underline solid rgb(254, 254, 255) 2px;
 }
 
 .container_stage .show_stage {
@@ -396,7 +398,9 @@ section {
 
 .section_contact h1 {
     padding-bottom: 100px;
+    text-decoration: underline solid rgb(255, 255, 255) 2px;
 }
+
 
 .container_blur {
     display: flex;
@@ -484,6 +488,10 @@ section {
     width: 100%;
 }
 
+.react_intro p, .react_why p, .react_util p, .react_caract p, .react_avantages p{
+    font-size: 22px;
+}
+
 
 .react_intro h1, .react_why h1, .react_util h1, .react_caract h1, .react_avantages h1{
     text-transform: uppercase;
@@ -500,9 +508,13 @@ section {
     padding-bottom: 20px;
 }
 
-.react_intro img, .react_why img, .react_util img, .react_caract img, .react_avantages img {
+.react_intro img,  .react_util img, .react_caract img, .react_avantages img {
     width: 400px;
     padding-top: 40px;
+}
+
+.react_why img {
+    width: 600px;
 }
 
 .react_caract img {
@@ -528,6 +540,154 @@ section {
 
 
 /* fin page veille */
+
+/* page stage1 */
+
+.container_titre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url("assets/stage1-screen/vecteezy_background-design-for-power-point-suitable-for-panda-ppt_12184489.jpg"); */
+}
+
+
+.container_titre h1 {
+    padding-bottom: 100px;
+    padding-top: 100px;
+    font-size: 80px;
+}
+
+.container_titre img {
+    width: 500px;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+}
+
+.container_titre>* {
+    padding-top: 20px;
+}
+
+.arrow_down {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.arrow_down img {
+    filter: invert(100%);
+    border: solid black 1px;
+    padding: 2px;
+    border-radius: 5px;
+    width: 60px;
+    transition: ease all 0.4s;
+    
+}
+
+.arrow_down img:hover {
+    transform: translateY(10px);
+    background-color: white;
+    filter: invert(0%);
+    
+}
+
+.container_contexte, .container_mission, .container_realisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.stage1_contexte {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.stage1_contexte>* {
+    padding-top: 30px;
+}
+
+.contexte_img{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contexte_img>img {
+    
+    width: 35rem;
+}
+
+.container_mission, .container_contexte{
+    height: 100vh;
+}
+
+.container_mission .mission {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.mission>p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.mission_img {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.mission_img img{
+    width: 40rem;
+}
+
+.container_realisation img {
+    width: 300px;
+}
+
+.realisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.realisation>img {
+    width: 400px;
+}
+
+.realisation .aggrandi {
+    transition: all ease 0.3s;
+    cursor: pointer;
+    
+}
+
+.realisation .aggrandi:hover {
+    transform: scale(2.2);
+    margin: 4rem;
+}
+
+.realisation>* {
+    padding-top: 50px;
+}
+
+section h2 {
+    padding-top: 50px;
+}
+
+.container_fin {
+    height: 40vh;
+}
+
+/* fin page stage1 */
 
 
 /* responsive mobile */
@@ -558,7 +718,7 @@ section {
         top: 0;
         left: 0;
         width: 100%;
-        height: 100vh;
+        height: 150vh;
         backdrop-filter: blur(5px);
         margin-left: -100%;
         transition: all 0.4s linear;
