@@ -480,7 +480,7 @@ section {
     width: 150px;
 }
 
-section {
+.react_intro, .react_why, .react_util, .react_caract, .react_avantages {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -489,22 +489,22 @@ section {
 }
 
 
-section h1 {
+.react_intro h1, .react_why h1, .react_util h1, .react_caract h1, .react_avantages h1{
     text-transform: uppercase;
     font-size: 40px;
     padding-bottom: 100px;
 }
 
-section h2 {
+.react_intro h2, .react_why h2, .react_util h2, .react_caract h2, .react_avantages h2 {
     text-transform: uppercase;
     padding-bottom: 50px;
 }
 
-section p {
+.react_intro p, .react_why p, .react_util p, .react_caract p, .react_avantages p {
     padding-bottom: 20px;
 }
 
-section img {
+.react_intro img, .react_why img, .react_util img, .react_caract img, .react_avantages img {
     width: 400px;
     padding-top: 40px;
     border-radius: 13px;
