@@ -251,6 +251,25 @@ section {
     padding-top: 20px;
 }
 
+.description_stage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+
+}
+
+.img_ddt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.img_ddt img {
+    width: 100px;
+}
+
 .container_stage h1 {
     font-size: 40px;
     padding-bottom: 40px;
@@ -439,6 +458,64 @@ section {
     border-radius: 14px;
     color: white;
 }
+
+/* page veille */
+
+.titre_veille {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 800px;
+    text-transform: uppercase;
+}
+
+.react_span {
+    color: yellow;
+}
+
+.titre_veille img {
+    padding-top: 50px;
+    width: 150px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+section h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-bottom: 100px;
+}
+
+section h2 {
+    text-transform: uppercase;
+    padding-bottom: 50px;
+}
+
+section p {
+    padding-bottom: 20px;
+}
+
+section img {
+    width: 400px;
+    padding-top: 40px;
+    border-radius: 13px;
+}
+
+.react_avantages .react_align p:nth-last-child(1){
+    padding-bottom: 60px;
+}
+
+
+/* fin page veille */
 
 
 /* responsive mobile */
