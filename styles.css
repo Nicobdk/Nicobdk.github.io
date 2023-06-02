@@ -141,6 +141,10 @@ section {
     transition: ease all 0.5s;
 }
 
+.section_home ,.section_about, .section_stage, .section_work, .section_contact{
+    height: 100vh;
+}
+
 .section_home .bienvenue span {
     display: none;
     background-color: rgb(181, 8, 8); 
@@ -352,6 +356,10 @@ section {
 /* fin section stage */
 
 /* section veille */
+
+.react_intro, .react_why, .react_util, .react_caract, .react_avantages {
+    height: 100vh;
+}
 
 .container_veille{
     display: flex;
@@ -622,7 +630,7 @@ section {
     width: 35rem;
 }
 
-.container_mission, .container_contexte{
+.container_mission{
     height: 100vh;
 }
 
@@ -664,13 +672,13 @@ section {
     width: 400px;
 }
 
-.realisation .aggrandi {
+.aggrandi {
     transition: all ease 0.3s;
     cursor: pointer;
     
 }
 
-.realisation .aggrandi:hover {
+.aggrandi:hover {
     transform: scale(2.2);
     margin: 4rem;
 }
@@ -688,6 +696,30 @@ section h2 {
 }
 
 /* fin page stage1 */
+
+/* page stage2 */
+
+.stage2_contexte {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.stage2_contexte>* {
+    padding-top: 30px;
+}
+
+.stage2_contexte>img {
+    width: 400px;
+}
+
+.container_null {
+    height: 15vh;
+}
+
+/* fin page stage2 */
 
 
 /* responsive mobile */
